@@ -1,0 +1,27 @@
+#!/bin/env bash
+
+# list all information for directories
+alias ls="ls -l --color=auto"
+alias la="ls -la --color=auto"
+
+# clipboard copy-pasting
+alias clipcopy="xclip -selection clipboard"
+alias clippaste="xclip -o -selection clipboard"
+
+# everything directory related
+alias ..="cd .."
+alias mv="mv -i"
+alias mkdir="mkdir -p"
+
+# get better disk usage report
+alias df="df -h"
+
+# update and upgrade and autoremove packages
+alias refresh="sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y"
+
+# enable aliases to be sudo'd
+alias sudo="sudo "
+
+# get week number
+alias week="date +%V"
+
