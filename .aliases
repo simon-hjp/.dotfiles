@@ -21,7 +21,12 @@ alias refresh="sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y"
 
 # enable aliases to be sudo'd
 alias sudo="sudo "
+alias pls="sudo !!"
 
 # get week number
 alias week="date +%V"
+
+# VPN Connections
+# Hack the Box Academy
+alias htbacademy="sudo openvpn Vpns/academy-regular.ovpn"
 
