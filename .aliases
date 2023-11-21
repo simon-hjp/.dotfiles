@@ -23,6 +23,9 @@ alias refresh="sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y"
 alias sudo="sudo "
 alias pls="sudo !!"
 
+# clear terminal screen
+alias c="clear"
+
 # get week number
 alias week="date +%V"
 
