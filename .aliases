@@ -33,3 +33,7 @@ alias week="date +%V"
 # Hack the Box Academy
 alias htbacademy="sudo openvpn Vpns/academy-regular.ovpn"
 
+# python commands versioning
+alias python="python3"
+alias pip="pip3"
+
