@@ -37,3 +37,9 @@ alias htbacademy="sudo openvpn Vpns/academy-regular.ovpn"
 alias python="python3"
 alias pip="pip3"
 
+# git shorthands
+alias gs="git status"
+alias ga="git add"
+alias gaa="git add --all"
+alias gc="git commit -m "
+alias gp="git push"
