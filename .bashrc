@@ -125,6 +125,11 @@ if [ -f ~/Repositories/.dotfiles/.bash_functions ]; then
     . ~/Repositories/.dotfiles/.bash_functions
 fi
 
+# tilix vte setting
+if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
+    source /etc/profile.d/vte/sh
+fi
+
 # colors
 blk='\[\033[01;30m\]'   # Black
 red='\[\033[01;31m\]'   # Red
