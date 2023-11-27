@@ -127,7 +127,7 @@ fi
 
 # tilix vte setting
 if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
-    source /etc/profile.d/vte/sh
+    source /etc/profile.d/vte.sh
 fi
 
 # colors
