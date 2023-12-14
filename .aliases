@@ -31,15 +31,20 @@ alias week="date +%V"
 
 # VPN Connections
 # Hack the Box Academy
-alias htbacademy="sudo openvpn Vpns/academy-regular.ovpn"
+alias htbacademy="sudo openvpn ~/Vpns/academy-regular.ovpn"
+# Hack the box Labs
+#alias htb="sudo openvpn ~/Vpns/
 
 # python commands versioning
 alias python="python3"
 alias pip="pip3"
 
 # git shorthands
-alias gs="git status"
+alias gf="git fetch"
 alias ga="git add"
 alias gaa="git add --all"
 alias gc="git commit -m "
-alias gp="git push"
+alias gpush="git push"
+alias gpull="git pull"
+alias gstat="git status"
+alias gstash="git stash"
