@@ -1,4 +1,4 @@
-#!/bin/env bash
+#sh !/bin/env bash
 
 # list all information for directories
 alias ls="ls -l --color=auto"
@@ -21,7 +21,7 @@ alias refresh="sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y"
 
 # enable aliases to be sudo'd
 alias sudo="sudo "
-alias pls="sudo !!"
+alias pls='sudo "$BASH" -c "$(history -p !!)"'
 
 # clear terminal screen
 alias c="clear"
