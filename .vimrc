@@ -44,6 +44,21 @@ set wildmenu
 set wildmode=list:longest
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx,*.xls
 
-
-
+" enable yanking to register
+command! -nargs=* Y :call YankList(<f-args>)
+fun! YankList(...)
+   let yanklist = []
+   for i in a:000
+      if match(i, "-") != -1
+         let split = split(i, "-")
+         let yanklist = yanklist + range(split[0], split[1])
+      else
+         let yanklist = yanklist + i
+      endif
+   endfor
+   call setreg('"', "")
+   for i in yanklist
+      call setreg('"', getline(i), "al")
+   endfor
+endfun
 
