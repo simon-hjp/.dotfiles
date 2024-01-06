@@ -21,7 +21,11 @@ alias refresh="sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y"
 
 # enable aliases to be sudo'd
 alias sudo="sudo "
+
+# quick corrections
 alias pls='sudo "$BASH" -c "$(history -p !!)"'
+eval $(thefuck --alias)
+
 
 # clear terminal screen
 alias c="clear"
