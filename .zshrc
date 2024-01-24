@@ -82,6 +82,7 @@ plugins=(
     pylint # might be annoying, let's see
     docker
     thefuck
+    zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh

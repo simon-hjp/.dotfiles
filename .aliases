@@ -45,6 +45,7 @@ alias pip="pip3"
 
 # git shorthands
 alias gf="git fetch"
+alias gfetch="git fetch"
 alias ga="git add"
 alias gaa="git add --all"
 alias gc="git commit"
